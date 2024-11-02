@@ -1,8 +1,6 @@
 @ECHO OFF
 PUSHD "%~dp0"
-set _arch=x86
-IF "%PROCESSOR_ARCHITECTURE%"=="AMD64" (set _arch=x86_64)
-IF DEFINED PROCESSOR_ARCHITEW6432 (set _arch=x86_64)
+set _arch=x86_64
 
 echo This script should be run with administrator privileges.
 echo Right click - run as administrator.
